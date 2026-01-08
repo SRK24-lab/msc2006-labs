@@ -20,10 +20,56 @@ h1:hover {
 }
 
 .center {
-  margin: auto;
-  width: 50%;
-  border: 3px solid green;
-  text-align: center;
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    text-align: center;
+}
+
+/* Sticky top navigation */
+.site-nav {
+    position: sticky;
+    top: 0;
+    background: #ffffffcc;
+    backdrop-filter: blur(4px);
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.site-nav .nav-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px;
+}
+
+.site-nav .logo {
+    font-family: 'Gravitas One', cursive;
+    font-size: 1.25rem;
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+.site-nav .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav .nav-links a {
+    color: #222;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 6px 8px;
+}
+
+.site-nav .nav-links a:hover {
+    background: rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
 }
 
 img.resize {
@@ -36,4 +82,3 @@ p {
     padding: 50px;
     margin: 50px;
 }
-
