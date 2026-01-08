@@ -7,6 +7,33 @@ h1 {
     font-size: 40px;
 }
 
+h1:hover {
+    font-size: 50px;
+    background-color: green;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Google Font - Coral Pixels */
 .cool_font {
     font-family: "Coral Pixels", serif;
 }
+
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  text-align: center;
+}
+
+img.resize {
+    width: 100%;
+    height: auto;
+}
+
+p {
+    border: 3px solid green;
+    padding: 50px;
+    margin: 50px;
+}
+
