@@ -1,0 +1,119 @@
+2026-01-15 -- Lecture 02 Notes
+- HTML subpages
+    - index.html will be your homepage
+    - subpages are additional HTML files that live within your website project's folder (these pages can be in a separate "pages" folder
+    or can be within the same location as the index.html)
+    the anchor element is used to define links to move between pages
+    - <a href-"[insert link]"> [Thing to be linked] </a>
+
+- Referencing
+    - Case 1: index.html in MAIN folder, other page called about.html is in a folder called PAGES 
+        <a href="pages/about.html">About Page</a>
+    - Case 2: if you are moving from the about.html (inside the PAGES folder) and you want to link back to the index.html (move up one level)
+        <a href="../index.html>Home</a>
+    - Case 3: if both files are in the same folder:
+        <a href="about.html">About Page</a>
+    - Case 4: if you website has a pages that contains about.html, you can link to it like this:
+        <a href="/pages/about.html">About Page</a>
+        - Case 4 is different from Case 1 because of the "/" at the beginning of the href - this tells the browser to go back to the root folder
+        (the website director)
+        - Case 4 is the better format to use, than Case 1
+
+- HTML/CSS Box Model
+    - every element is treated like a box with ah width and a height
+    - the box contains CONTENT, PADDING, BORDER, and MARGIN
+    - Content: what the box contains
+    - Padding: the space between the Content and the BORDER
+    - Border: the Border
+    - Margin: the space outside of the Border
+    - css.land/box-model
+    - you can go into the browser's dev tools to look at the elements of each box in the Inspector
+
+- CSS_Recap
+    - CSS has RULES that contain SELECTORS and DECLARATIONS
+    - h1 {
+        color: deeppink;
+    }
+    - h1 = selector
+    - Declaration = color: deeppink;
+    - Property = color
+    - value = deeppink
+
+- CSS_Selectors
+    - tells our CSS which elements on the HTML page to style
+    1) type selector: targets all of the defined elements
+        e.g.) p {color: blue} -- this will make all p elements blue
+    2) class selector: targets elements with a specific class, can be reused
+        e.g.) .card {color: blue} -- will select any element that is assigned the .class selector
+    3) id selector: targets 1 specific element, can only be used once
+        e.g.) #header {color: blue} -- will select the one element that has the #header selector
+    4) descendant selector: targets elements inside another element
+        e.g.) div p {color: blue} -- only selects p that are in a div
+        - Note: div is a container that you can put in other containers
+
+- CSS Pseudo Classes and Pseudo elements
+    let you style elements based on STATESS or specifc parts of an element
+    - Pseudo-class styles
+        e.g.) button: hover {background-color: blue;}
+    -Pseudo-element - styles a specific part of an element
+        e.g.) p:first-letter {color: blue}
+
+- CSS & div tags
+    - will let you style an entire section
+    - div is easilty styled using the class or id attribute and associated selector
+    - by default, browsers space a line break before and after the <div> element
+
+- CSS Cascading Order
+    - specificity: how targetted a CSS rule will be - the CSS rule wins based on targeting
+    e.g.) a h1 rule will be more specific than a class selector
+    - inheritance: CSS automaticall pass from a parent to the child, unless overridden
+    e.g.) if <body> has a color, then a <p> element inside it will have the same color, unless overridden
+    - order of Declaration: when selectors have the same specificity, the rule that appears later in the CSS file take precedence
+    e.g.) if .box {background: blue;} is written before .box {background: green;}, the box will be green
+
+- CSS display and positioning
+    - Display:
+        - block - takes full width, starts a new line
+        - inline - stays in line with text, no width or height
+        - inline-block - stays inline but allows sizing
+        - none: removes the element from the page
+    - Position:
+        - static - default position in normal flow
+        - relative - moves relative to itself
+        - absolute - positioned relative to nearest parent
+        - fixed - positioned relative to the viewport
+        - sticky - switches between relative and fixed
+
+- CSS Flexbox
+    - arranges elements in rows or columns (one-directional layout)
+    - used to structure smaller elements within a page
+
+- CSS Grid
+    - uses rows and columns at the same time (two-dimentional layout)
+    - structures entire pages
+
+- flexboxfroggy.com
+
+- CSS: other things to know
+    - background-color
+    - text-align
+    - align-items
+    - font-size
+    - font-weight
+    - font-color
+
+____________________
+
+- Accessible design
+    - this isn't something you slap on at the end - it should be part of the design process
+    - things to tthink about - color, motion
+    - accessibility determines who can use the website, so it should be part of the design process from the beginning
+
+- Models of disability:
+    - ways in which disability are understood:
+        1) medical (deficit) model - disability is something that is wrong with someone. The goal is then to be how to fix them or compensate them
+        2) Social model - people are not disabled by their bodies, but are disabled by society and design choices
+            this places the responsibility on the designers to create intfrastructure, interfaces and systems that are accessible to all
+
+
+

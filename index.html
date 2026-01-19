@@ -4,51 +4,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Best website in the galaxy!</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.webp">
+    <title>My Dev Diaries</title>
+    <link rel="icon" type="image/x-icon" href="/images/devdiary_logo.png">
     <link rel="stylesheet" href="style.css">
-
-    <!-- Google Fonts - Roboto -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-
-    <!-- Google Fonts - Gravitas One -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap" rel="stylesheet">
-
-    <!-- Google Fonts - Coral Pixels -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Coral+Pixels&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
-    <nav class="site-nav">
-        <div class="nav-inner">
-            <a class="logo" href="#">Galaxy</a>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>MyDevDiaries</h1>
+            </div>
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="pages/about.html">About</a></li>
             </ul>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <main class="center">
-        <img class="resize" src="images/hello_world.png">
-        <h1 class="cool_font">Main Heading</h1>
-        <h2 class="cool_font">Subheading</h2>
-        <h3 class="cool_font">Smaller Heading</h3>
-        <p>This is a paragraph of text.</p>
-        <p>Look at this <a href="https://github.com/" , target="_blank">website</a> too!.</p>
-        <img class="resize" src="images/beautiful.gif">
+    <main>
+        <section class="hero">
+            <h1>Welcome to My DevDiaries</h1>
+            <p>Documenting my web development journey, one lab at a time.</p>
+        </section>
+
+        <section class="gallery">
+            <h2>My Entries</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <a href="pages/lab2.html">
+                        <img src="images/lab2.png" alt="Lab 2 project screenshot showing navigation and layout">
+                        <div class="gallery-overlay">
+                            <h3>Lab2 </h3>
+                            <p>15/Jan/2026</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/coming-soon.jpg" alt="Coming soon">
+                    <div class="gallery-overlay">
+                        <h3>Coming Soon</h3>
+                        <p>Coming Soon</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/coming-soon.jpg" alt="Coming soon">
+                    <div class="gallery-overlay">
+                        <h3>Coming Soon</h3>
+                        <p>Coming Soon</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/coming-soon.jpg" alt="Coming soon">
+                    <div class="gallery-overlay">
+                        <h3>Coming Soon</h3>
+                        <p>Coming Soon</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>MyDevDiaries</h3>
+                <p>Documenting my journey in webdevelopment</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/about.html">About</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: your.email@example.com</p>
+                <p>Website: You're on it, buddy!</p>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 My DevDiaries. All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
+
+
+<!-- Step 5: Create Placeholder Screenshots, & update Alt text -->
