@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab 2</title>
     <link rel="stylesheet" href="../style.css">
 </head>
+
 <body>
     <header>
         <nav>
             <div class="logo">
-                <h1>MyDevDiaries</h1>
+                <a href="/index.html">
+                    <h1>MyDevDiaries</h1>
+                </a>
             </div>
             <ul class="nav-links">
                 <li><a href="../index.html">Home</a></li>
@@ -20,6 +24,13 @@
     </header>
 
     <main>
+        <section class="page-nav">
+            <a href="../index.html">
+                <img src="../images/back-arrow.png" alt="">
+                <p>Back to Home</p>
+            </a>
+        </section>
+
         <section class="lab-header">
             <h1>Lab 2</h1>
             <p class="lab-date">15/January/2026</p>
@@ -39,7 +50,8 @@
 
             <div class="learning-section">
                 <h3>Responsive Design</h3>
-                <p>I learned how to make websites adapt to different screen sizes using media queries. This ensures my site looks great on phones, tablets and desktops.</p>
+                <p>I learned how to make websites adapt to different screen sizes using media queries. This ensures my
+                    site looks great on phones, tablets and desktops.</p>
             </div>
         </section>
 
@@ -48,17 +60,17 @@
 
             <div class="screenshot-grid">
                 <figure>
-                    <img src="..images/lab2-nav.jpg" alt="This is screenshot 1">
+                    <img src="../images/lab2-nav.jpg" alt="Navigation bar focussed on the webpage title">
                     <figcaption>Navigation bar with hover effects</figcaption>
                 </figure>
 
                 <figure>
-                    <img src="../images/lab2-gallery.jpg" alt="This is screenshot 2">
+                    <img src="../images/lab2-gallery.jpg" alt="Gallery entries on the webpage">
                     <figcaption>Responsive gallery layout using CSS Grid</figcaption>
                 </figure>
 
                 <figure>
-                    <img src="../images/lab2-footer.jpg" alt="This is screenshot 3">
+                    <img src="../images/lab2-footer.jpg" alt="Footer of the webpage">
                     <figcaption>Consistent footer across all pages</figcaption>
                 </figure>
             </div>
@@ -66,7 +78,67 @@
 
         <section class="lab-reflection">
             <h2>Reflection</h2>
-            <p>X.</p>
+            <p>
+                This week's exercise was interesting. It gave me a chance to play with HTML & CSS, helping me get a
+                better understanding of how multiple pages interact with
+                each other. For the most part, it was easy to follow the instructions and build out the webpages.
+                However, I found that a lot of the times, I was typing out
+                code and not necessarily knowing what it does.
+            </p>
+
+            <p>
+                One thing I realized is that there are so many tags and elements to know. It is very intimidating. I
+                know that overtime, I can learn how different tags and elements work individually, but figuring out how
+                they interact with each other to create a creative effect is another level. Creating a webpage seems
+                daunting because I wouldn't know which tags or elements to pick out from the thousands that are
+                available.
+
+                I'm
+                assuming this gets better with experience, but in the
+                meantime, do I just keep Googling things?
+            </p>
+
+            <p>
+                Also, debugging code was very challenging. Missing one / or - could break everything and trying to find
+                the issue was very challenging. I have no idea where to start when I encounter a problem. <strong>I
+                    wonder if there is some method to debug efficiently??</strong> Knowing which
+                tag to choose to solve a particular problem seems impossible to me. I almost feel like I have to try out
+                many different combinations of tags and elements and see which ones work... I feel like I need to get to
+                the point where I can predict what tags will do when I use them, so that I can know how to use them when
+                solving a problem.
+            </p>
+
+            <p>
+                With regards to responsive design, I feel like I understand the concepts behind the code, but putting
+                them into practice has proven difficult. Even on this webpage, you can see that there are issues with
+                the responsive design. The right side of the <code>main</code> element is cut off when the screen gets
+                smaller. The <code>footer-bottom</code> class should be positioned below the rest of the footer, but
+                instead it is positioned to the right as a 4th column. I've tried figuring out how to fix these, but I'm
+                stuck. Another issue (which may not be a responsive design issue) is that sometimes if I scroll to fast,
+                the navigation bar gets stuck in the middle of the screen. Sometimes scrolling up and down again fixes
+                the issue, but sometimes, it takes many tries.
+            </p>
+
+            <p>
+                I think the problem is not that I don't understand how responsive design works, but more that <strong>I
+                    don't understand how positioning works in CSS</strong>. Things like Flexbox or Grids never seem to
+                work the way I
+                want them to. In addition, how does this work in conjunction with absolute or relative positioning?
+            </p>
+
+            <p>
+                Some other things I need clarification on are:
+            <ul>
+                <li>understanding the different units of measurement (i.e. rem, fr)</li>
+                <li>
+                    understanding how to position images with a box-container (if I want to focus on the left corner of
+                    an image, is there a way to do this?)
+                </li>
+                <li>
+                    How to align text vertically? E.g. how do I align the "Back to Home" text at the top of this webpage to the arrow img on its left?
+                </li>
+            </ul>
+            </p>
         </section>
     </main>
 
@@ -97,4 +169,5 @@
         </div>
     </footer>
 </body>
+
 </html>
