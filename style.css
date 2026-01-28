@@ -486,3 +486,52 @@ main {
 .lab-reflection p:last-child {
     margin-bottom: 0;
 }
+
+
+/* Lab 3 - Storyboard Scrolling Gallery */
+.scroll-container {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+    height: fit-content;
+    margin-bottom: 5rem;
+}
+
+.scroll-container img {
+    padding: 10px;
+    height: 30rem;
+}
+
+.storyboard h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;;
+    color: #2c3e50;
+}
+
+#classmate {
+    margin: 3rem 0;
+}
+
+#classmate h2 {
+    color: white;
+    margin: auto;
+}
+
+#classmate img{
+    display: block;
+    margin: auto;
+}
+
+/* Question and answer styling */
+
+.question {
+    font-size: 1.2em;
+    font-weight: bold;
+    display: inline;
+}
+
+.answer {
+    margin-left: 2rem;
+}
