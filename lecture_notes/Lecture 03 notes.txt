@@ -1,0 +1,32 @@
+2026-01-22 -- Lecture 03 notes
+
+Slide 3
+- preproduction in an animation uses a linear workflow, but interactive projects use non-linear workflows
+- preproduction is important because the more time you spend planning out your project, the less time you have to spend fixing problems later on
+- preproduction allows you to incorporate "design sign-offs" where stakeholders can approve designs before moving forward 
+
+Slide 4 - Linear vs non-linear workflow
+- content research - gives you a chance to learn about the content and understand how it all workflows
+- storyline / script - think about overall story progression. At this stage, there isn't too much difference btwn linear and non-linear. 
+- Prototype - these can be created in software or even on paper. 
+
+Slide 6 - Storyboards
+- a sequnce of diagrams that map out events over time
+- can map out user interaction
+- storyboards use arrows to communicate camera moves, objects moving. Because arrows have multiple conotations, you need to be clear about what the function of an arrow in your storyboard is
+- storyboards don't really show transitions (how does something pop into the page - does it fly in from the side, dissolve in, etc.?). These are things that need to be addressed later in the process
+
+Slide 41 - Preproduction for Games
+- show button triggers / interaction that show user-driven events
+- you can use 1 frame to show a variety of movements happening to illustrate the event
+
+Slide 55 - Prototype
+- can be figma-developed wireframes or can be pieces created in Unity
+- when prototyping, use thumbnails to come up with different layouts and ideas of how to present information
+
+- 5 dimensions of interaction design
+1) Words - semantics or meaning
+2) Visual Representation - Typography, icons that a user can interact with - create hierarchy
+3) Physical Objects or Space - the medium that the user will interact with the project on. For example, mobile medium excludes hover animations
+4) time - anything that changes with time (animation, sound)
+5) Behaviour - consider how the users operate on your site based on their feelings as the use your Prototype
