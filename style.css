@@ -487,6 +487,10 @@ main {
     margin-bottom: 0;
 }
 
+.lab-reflection img {
+    max-width: 100%;
+}
+
 
 /* Lab 3 - Storyboard Scrolling Gallery */
 .scroll-container {
