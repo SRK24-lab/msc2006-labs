@@ -454,6 +454,10 @@ main {
     display: block;
 }
 
+#rectum_concept {
+    height: fit-content;
+}
+
 .screenshot-grid figcaption {
     padding: 1rem;
     text-align: center;
@@ -539,3 +543,4 @@ main {
 .answer {
     margin-left: 2rem;
 }
+
