@@ -1,0 +1,42 @@
+Web Development III
+- Javascript overview
+- Brief discussion of image formats
+
+- javascript: 
+    - makes websites interactive, 
+    - responds to user actions, 
+    - changes content without reloading the page
+    - adds animations and effects
+
+- Javascript works using a Document Object Model (DOM)
+    - whe your browser works, it turns your html into a DOM, which categorizes the different parts of the webpage
+    - javascript can select parts of the DOM tree and changes it
+
+- js file organization:
+    - large websites use multiple js files - having all your scripts in one big file can get complicated
+    - you can call on the different scripts when needed
+    - better performance = only need to load the scripts that you need
+    - better maintainability = don't need to look through thousands of lines of code to debug, instead need to search for each file
+
+- adding js
+    - inline: <button onclick="alert('Hello')">Click Me</button>
+    - internal: inside <script> tags in your html
+    - external: separate .js file, linked with <script src="script.js"></script>
+        - this is placed at the end of the html's body (you want to let the html fully load first befor you act on it with js)
+        - one way to test if you js file is connected is to use: console.log("hello");
+
+- adding your first js code
+    - console.log("hello world");
+    - alert("hello world");
+
+- js statements - tell the browser what to do
+    - variables
+    - operators
+    - expressions
+    - keywords
+    - comments
+    - conditions
+    - functions
+    - events
+
+- note: you don't want to use js to dictate styling (ie: display = none), that is something that CSS is for. instead, use js to toggle the already existing CSS styles

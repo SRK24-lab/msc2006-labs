@@ -4,162 +4,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 4</title>
-    <link rel="stylesheet" href="../style.css">
+    <title>Lab 4 - Scrollytelling</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="../lab4-style.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <a href="/index.html">
-                    <h1>MyDevDiaries</h1>
-                </a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="scrolly-container">
+        <!-- Left: visuals -->
+        <div class="visual-column">
+            <div class="visual-stack">
+                <div class="visual active" id="visual-1">
+                    <div class="image-stage">
+                        <img class="main-image" src="../images/lab4/Step1.jpg" alt="Step 1">
+                        
+                        <!-- Hover Hotspot-->
+                        <div class="hotspot">
+                            <img src="../images/lab4/hotspot.png" alt="Hotspot Icon" class="hotspot-icon">
+                            <div class="hotspot-label">
+                                This receptor binds molecule X and activates the pathway.
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    <main>
-        <section class="page-nav">
-            <a href="../index.html">
-                <img src="../images/back-arrow.png" alt="">
-                <p>Back to Home</p>
-            </a>
-        </section>
+                <div class="visual" id="visual-2">
+                    <img src="../images/lab4/Step2.jpg" alt="Step 2">
+                </div>
 
-        <section class="lab-header">
-            <h1>Lab 4</h1>
-            <p class="lab-date">5/February/2026</p>
-        </section>
-
-        <section class="lab-content">
-            <h2>What I Learned</h2>
-
-            <div class="learning-section">
-                <h3>Blender: Geometry Nodes</h3>
-                <p>In this lab, I dipped my toes into the world of geometry nodes in Blender.</p>
-            </div>
-
-            <div class="learning-section">
-                <h3>Blender: PBR Textures</h3>
-                <p>I learned how to implement texture based ont Physically Based Rendering (PBR) within Blender</p>
-            </div>
-
-            <div class="learning-section">
-                <h3>Blender: Compositing</h3>
-                <p>Played around with compositing in Blender to try and add different visual effects to the final animation.</p>
-            </div>
-        </section>
-
-        <section class="lab-images">
-            <h2>Project Screenshots</h2>
-
-            <div class="screenshot-grid">
-                <figure>
-                    <img src="../images/lab4/geonodes-frame.png" alt="Frame from the GeoNodes experimentation I made">
-                    <figcaption>Animating with Geometry Nodes</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="../images/lab4/geonodes-setup.jpg" alt="Blender's node-based system for Geometry Nodes">
-                    <figcaption>Using Blender's node-based system</figcaption>
-                </figure>
-            </div>
-        </section>
-
-        <section class="lab-reflection">
-            <h2>Reflection</h2>
-            
-            <p>
-                I <strong>REAAALLLY</strong> enjoyed this week's lab exercise! Being able to have the choice to work on something with no restrictions was very freeing and gave me a chance to breathe and have fun while I'm bogged down with other assignments. Although, part of the difficulty with something this open was trying to focus in on a particular projec that I wanted to work on. I can be very indecisive when there are so many options for me. Some of hte other projects I wanted to attempt for this lab were:
-                <ul>
-                    <li>Learn how to use the Substance Painter / Designer workflow</li>
-                    <li>Learn Grease Pencil in Blender to make 2D/3D animations</li>
-                    <li>Learn sculpting in Blender - attempting to sculpt, retopologize, rig, and animate a simple character</li>
-                    <li>Creating Pixel Art in Aseprite</li>
-                    <li>making a simple 2D pixel game in Godot</li>
-                </ul>
-                I eventually decided to go with a project centered on Geometry nodes because I've heard about it and was always interested in learning it, but never had the time. Again, I'm really appreciative that we got time to do something in class that wasn't necessarily related to course work. I truly hope we get more opportunities to do something like this in class in the future!
-            </p>
-
-            <p>
-                For this project, I started by searching on Youtube for various Geometry Node tutorials. There are many available, but I landed on one by Ducky3D. I've know about his channel for awhile, and I felt like his video was explained very nicely, so I wanted to base my project off of one of his videos, in particular <a href="https://youtu.be/t_Xfl9Nub-I?si=aGOvPb5lShn_d8DV">this one</a>.
-            </p>
-
-            <img src="../images/lab4/tutorial.jpg" alt="Thumbnail for the Ducky3D video I based this experiment on">
-
-            <p>
-                The tutorial showed how to use geometry nodes, in Blender's node-based system. I've used Blender's node editor for make procedural materials and shaders before, so I do have some previous experience using Blender's node-based system. However, learning about all of the possible Geometry Nodes that are available is very intimidating. After going through the tutorial, I feel like I have a basic understanding of what most of the nodes do, but I don't have enough experience to replicate an idea or to problem solve any issues that may arise while using Geometry Nodes. I hope that as I keep practicing with Geometry nodes, it will become more intuitive. Here is the final Geometry Node setup that I used for this project:
-            </p>
-
-            <img src="../images/lab4/geonodes-setup.jpg" alt="Blender's node-based system for Geometry Nodes">
-
-            <p>
-                The next part of the assignment was animating the project using keyframes on properties of the Geometry Nodes. This was relatively straight forward because it is very similar to animating in Blender in general. I also tool this time to add lighting and also PBR textures to make things look interesting. I downloaded this desert sand texture from <a href="https://ambientcg.com/view?id=Ground097">Ambient CG</a>:
-            </p>
-
-            <img src="../images/lab4/desert-sand.png" alt="Shader sphere showing the desert sand texture used">
-
-            <p>
-                ... and implemented it into the ground in my Blender scene:
-            </p>
-
-            <img src="../images/lab4/ground-texture.jpg" alt="Node setup for PBR texture of the ground">
-
-            <p>
-                I also added a procedural noise texture to the Geometry nodes object to make it more interesting. Here is the node setup for that:
-            </p>
-
-            <img src="../images/lab4/noise-texture.jpg" alt="Node setup for procedural noise texture on the Geometry Nodes object">
-
-            <p>
-                I also took this opportunity to work in Blender's compositor, which I've never really used before. It gave me a chance to play around with adding different effects to the final render, which was interesting. I probably could have spent hours and hours fiddling with the different options available in the compositor, but I wanted to keep things relatively simple. One thing that I would like to focus on next time I work with the compositor is figuring out how to use render passes and optmize working with those. In any case, here is the compositor node setup that I used:
-            </p>
-
-            <img src="../images/lab4/compositing.jpg" alt="Node setup for compositing the final render">
-
-            <p>
-                After all of this, I rendered out the final animation:
-            </p>
-            
-            <video width="100%" controls autoplay loop muted>
-                <source src="../images/lab4/geonodes.mp4" type="video/mp4" alt="final rendered animation">
-            </video>
-
-            <p>Again, I had so much fun doing this project, and I really hope that we get more freedom in the future to experiment more in this class!</p>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>MyDevDiaries</h3>
-                <p>Documenting my journey in webdevelopment</p>
-            </div>
-
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h3>Contact</h3>
-                <p>Email: your.email@example.com</p>
-                <p>Website: You're on it, buddy!</p>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2026 My DevDiaries. All Rights Reserved</p>
+                <div class="visual" id="visual-3">
+                    <img src="../images/lab4/Step3.jpg" alt="Step 3">
+                </div>
             </div>
         </div>
-    </footer>
+
+        <!-- Right: story text-->
+        <div class="text-column">
+            <div class="spacer"></div>
+
+            <section class="story-step" data-visual="1">
+                <h2>Chapter 1: Enter Glimmerblob</h2>
+                <p>Deep in the Funkythalamus, a cell named Glimmerblob floated quietly, waiting for something to happen.</p>
+                <p>As you scroll, the visual on the left should eventually change.</p>
+            </section>
+
+            <div class="spacer-middle"></div>
+
+            <section class="story-step" data-visual="2">
+                <h2>Chapter 2: Molecule X Arrives</h2>
+                <p>A messenger molecule drifted into view. It carried information the cell needed to respond.</p>
+                <p>This section should trigger the second image.</p>
+            </section>
+
+            <div class="spacer-middle"></div>
+
+            <section class="story-step" data-visual="3">
+                <h2>Chapter 3: The Giggle Pathway Activates</h2>
+                <p>When Molecule X connected to Receptor Y, the pathway activated and the cell “lit up.”</p>
+                <p>This section should trigger the third image.</p>
+            </section>
+
+            <div class="spacer"></div>
+        </div>
+    </div>
+</body>
+
+    <!-- Connect JS -->
+    <script src="../scripts/lab4-script.js"></script>
 </body>
 
 </html>
