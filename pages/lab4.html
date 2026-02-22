@@ -11,6 +11,20 @@
 </head>
 
 <body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="../index.html">
+                    <h1>MyDevDiaries</h1>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <div class="scrolly-container">
         <!-- Left: visuals -->
         <div class="visual-column">
@@ -18,7 +32,7 @@
                 <div class="visual active" id="visual-1">
                     <div class="image-stage">
                         <img class="main-image" src="../images/lab4/Step1.jpg" alt="Step 1">
-                        
+
                         <!-- Hover Hotspot-->
                         <div class="hotspot">
                             <img src="../images/lab4/hotspot.png" alt="Hotspot Icon" class="hotspot-icon">
@@ -36,16 +50,21 @@
                 <div class="visual" id="visual-3">
                     <img src="../images/lab4/Step3.jpg" alt="Step 3">
                 </div>
+
+                <div class="visual" id="visual-4">
+                    <img src="../images/devdiary_logo.png">
+                </div>
             </div>
         </div>
 
         <!-- Right: story text-->
         <div class="text-column">
-            <div class="spacer"></div>
+            <div class="spacer-top"></div>
 
             <section class="story-step" data-visual="1">
                 <h2>Chapter 1: Enter Glimmerblob</h2>
-                <p>Deep in the Funkythalamus, a cell named Glimmerblob floated quietly, waiting for something to happen.</p>
+                <p>Deep in the Funkythalamus, a cell named Glimmerblob floated quietly, waiting for something to happen.
+                </p>
                 <p>As you scroll, the visual on the left should eventually change.</p>
             </section>
 
@@ -65,13 +84,45 @@
                 <p>This section should trigger the third image.</p>
             </section>
 
-            <div class="spacer"></div>
+            <div class="spacer-middle"></div>
+
+            <section class="story-step" data-visual="4" id="dev-diary">
+                <h1>Reflections</h1>
+                <p>Lab 4 - Scrolly-Telling</p>
+                <p>
+                    This lab was more complicated than the ones before, not because of the introduction of javascript, but more because of the complicated nature of debugging HTML/CSS styling issues.
+                </p>
+                <p>
+                    While I don't necessarily understand all the details of the javascript language, I think this lab was meant more to give us a general understanding of javascript in the context of a webpage. Knowing that, I feel like understand the role javascript plays in webdev and I also have a general understanding of how it is implemented into a webpage. This makes me confident in my understanding of this week's lab material.
+                </p>
+                <p>
+                    The main issue that I struggled with during this lab was getting the styling that I wanted. Whether that involved centering objects within the webpage or their container columns, or creating a responsive webpage that integrates a vertical flex-direction (so that the image column would be stacked at the top of the webpage and the text column would be at the bottom). 
+                </p>
+                <p>
+                    Whenever I get stuck in these situations, I often end up googling to figure out a solution. Because of the plethora of documentation, I usually find what I need, but the problem is that there are times when I make necessary changes to the code and get uninteded results. My guess is that some CSS selector or property somewhere else in the code is exerting some sort of effect, and this makes it so that I can't seemingly fix the issue. This makes debugging very frustrating and discouraging.
+                </p>
+                <p>
+                    For example, I had a very difficult time figuring out how to complete the Bonus task of making the webpage responsive for mobile. I was able to get the columns to stack properly, but the positioning of elements is broken for some unknown reason. Going through my process, I figured that I would need to change the flex-direction of the .scrolly-container (which contained the 2 different columns). However, I noticed that the bottom column with the text was shifted to the right. I searched through the CSS to find some random margin or padding property, but I couldn't find anything. I tried using google to figure out how to fix the issue, but didn't get any real solutions. So now I'm stuck and I don't really know how to fix it. Another related issue is that the first image seems to be larger than any of the other images as you scroll through the page. Again, I'm not sure why.
+                </p>
+                <p>
+                    This same sort of situation has come up many times during any webdev projects, and it's very frustrating, to say the least. For example, one of the issues my webpage has is that the right side of all the elements in the main section of the body extend further out past the edge of the browser. I'm sure the solution is something simple, but I still haven't been able to figure it out, and it's driving me crazy! 
+                </p>
+                <p>
+                    Even understanding things related to styling are difficult for me. For example, "spacer" divs were used in the lab manual instead of using margins on each text section. Was there a reason behind this method instead of using margins? Trying to understand how to arrange items vertically within a column has always been difficult for me to understand.
+                </p>
+                <p>
+                    Issues like these make me really have a hard time getting excited about webdev projects. I see how cool some webpages look and I always think how cool it would be if I could try to build something like that, but then I get thrown back to reality when I have to deal with CSS styling issues. It's interesting because I feel like I have a better time understanding actual programming languages, like python, or in some ways javascript (even though I don't really have that much experience with it) because it is very logical - variables are created and then certain things happen to those variables. That makes sense to me. But when I have to deal with CSS, it's just a huge list of properties, all of which interact with each other and overwrite each other. This makes debugging hard but also creating hard as well, because if I don't know the specific property that I need in a specific case, I'm out of luck, whereas with a programming language, I can most likely figure out some way to get the intended outcome using math or some other trickery. 
+                </p>
+                <p>
+                    All in all, I really struggle with CSS and webpage styling, and I don't really know how to get better at it. I wish I could get better at it, but I'm not really sure how to, and I think that's what makes me so frustrated with it.
+                </p>
+            </section>
         </div>
     </div>
 </body>
 
-    <!-- Connect JS -->
-    <script src="../scripts/lab4-script.js"></script>
+<!-- Connect JS -->
+<script src="../scripts/lab4-script.js"></script>
 </body>
 
 </html>
