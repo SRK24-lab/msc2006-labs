@@ -7,22 +7,12 @@
     <title>My Dev Diaries</title>
     <link rel="icon" type="image/x-icon" href="/images/devdiary_logo.png">
     <link rel="stylesheet" href="style.css">
+    <script defer src="../scripts/include.js"></script>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <a href="index.html">
-                    <h1>MyDevDiaries</h1>
-                </a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="pages/about.html">About</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Header will be inserted here -->
+    <div data-include="../components/header.html"></div>
 
     <main>
         <section class="hero">
@@ -105,11 +95,13 @@
                 </div>
 
                 <div class="gallery-item">
-                    <img src="images/coming-soon.jpg" alt="Coming soon">
-                    <div class="gallery-overlay">
-                        <h3>Coming Soon</h3>
-                        <p>Coming Soon</p>
-                    </div>
+                    <a href="pages/lab5.html">
+                        <img src="images/lab5/lab5.png" alt="Lab 5 code">
+                        <div class="gallery-overlay">
+                            <h3>Lab 5</h3>
+                            <p>5/March/2026</p>
+                        </div>
+                    </a>
                 </div>
 
                 <div class="gallery-item">
@@ -123,32 +115,8 @@
         </section>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>MyDevDiaries</h3>
-                <p>Documenting my journey in webdevelopment</p>
-            </div>
-
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="pages/about.html">About</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h3>Contact</h3>
-                <p>Email: your.email@example.com</p>
-                <p>Website: You're on it, buddy!</p>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2026 My DevDiaries. All Rights Reserved</p>
-            </div>
-        </div>
-    </footer>
+    <!-- Footer will be inserted here -->
+    <div data-include="../components/footer.html"></div>
 </body>
 
 </html>
